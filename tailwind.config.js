@@ -22,7 +22,19 @@ module.exports = {
         },
       },
       animation: {
-        'slide-in': 'slide-in 0.3s ease-out forwards',
+        'slide-in': 'slideIn 0.3s ease-out forwards',
+      },
+      keyframes: {
+        slideIn: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
       },
     },
   },
